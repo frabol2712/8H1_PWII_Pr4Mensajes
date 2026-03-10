@@ -1,0 +1,107 @@
+.cart {
+  max-width: 640px;
+  margin: 32px auto 48px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+}
+
+.title {
+  margin: 0 0 18px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title::before {
+  content: '🛒';
+  font-size: 18px;
+}
+
+.empty {
+  margin: 0;
+  color: var(--muted);
+  text-align: center;
+  padding: 28px 0;
+  font-size: 14px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  transition: border-color 0.2s;
+}
+
+.item:hover {
+  border-color: var(--border-mid);
+}
+
+.line {
+  font-size: 14px;
+  color: var(--text);
+}
+
+.total {
+  margin-top: 18px;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--accent-light);
+  text-align: right;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.actions {
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.btn {
+  border: 0;
+  border-radius: 10px;
+  padding: 9px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  transition:
+    opacity 0.2s,
+    transform 0.1s;
+  background: var(--border-mid);
+  color: var(--text);
+}
+
+.btn:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.btn.danger {
+  background: var(--danger);
+  color: #fff;
+}
+
+.btn.purple {
+  background: var(--purple);
+  color: #fff;
+}

@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #0b0f14;
+  --card: #111827;
+  --border: #1f2937;
+  --border-mid: #374151;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #059669;
+  --accent-light: #10b981;
+  --danger: #ef4444;
+  --purple: #7c3aed;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+app-product-card {
+  display: block;
+  border-radius: 14px;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+app-product-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 16px 32px rgba(0, 0, 0, 0.5),
+    0 0 0 1px var(--accent);
+}
